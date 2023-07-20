@@ -90,4 +90,8 @@ export class SearchComponent {
         this.state.searchFilter.set(value);
       });
   }
+
+  ngOnInit() {
+    this.searchControl.setValue(this.state.searchFilter());
+  }
 }
